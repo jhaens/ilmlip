@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Command builder · ILMlip</title>
+  <meta name="description" content="Build the command or script for MD, fine-tuning and training with ILMlip.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/site.js" defer></script>
+  <script src="assets/builder.js" defer></script>
+</head>
+<body>
+  <main class="wide">
+    <h1>Command builder</h1>
+    <p class="lead">Pick what you want to do; the command updates as you go. Every option says what it does.</p>
+    <div class="tabs" role="tablist"></div>
+    <div class="builder">
+      <form class="form" autocomplete="off"></form>
+      <div class="out">
+        <pre><code></code></pre>
+        <div class="actions"><button type="button" data-act="copy">Copy</button><button type="button" data-act="save">Download</button></div>
+        <div class="cite"><button type="button" class="info" aria-expanded="false" aria-label="BibTeX entries" title="BibTeX">i</button><span></span></div>
+        <div class="bib" hidden><pre><code class="language-bibtex"></code></pre></div>
+        <ul class="notes"></ul>
+      </div>
+    </div>
+    <noscript>This page needs JavaScript.</noscript>
+  </main>
+</body>
+</html>

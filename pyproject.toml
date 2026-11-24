@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ilmlip"
+dynamic = ["version"]
+description = "ILMlip: fast and universal interatomic potentials"
+readme = "README.md"
+license = "PolyForm-Noncommercial-1.0.0"
+license-files = ["LICENSE.md"]
+authors = [{ name = "Jonas Hänseroth" }]
+requires-python = ">=3.12"
+dependencies = ["numpy", "torch>=2.11", "ase>=3.29", "vesin>=0.6.2"]
+keywords = ["machine learning interatomic potential", "molecular dynamics", "ACE", "equivariant", "ASE", "LAMMPS", "JAX"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Chemistry",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+
+[project.urls]
+Homepage = "https://jhaens.github.io/ilmlip/"
+Documentation = "https://jhaens.github.io/ilmlip/reference.html"
+Repository = "https://github.com/jhaens/ilmlip"
+Issues = "https://github.com/jhaens/ilmlip/issues"
+Models = "https://github.com/jhaens/ilmlip-models"
+
+[project.optional-dependencies]
+jax = ["jax>=0.11.2,<0.12"]
+fused = ["jax>=0.11.2,<0.12", "cuequivariance>=0.12", "cuequivariance-torch>=0.12", "cuequivariance-jax>=0.12", "cuequivariance-ops-torch-cu12>=0.12; sys_platform == 'linux'", "cuequivariance-ops-jax-cu12>=0.12; sys_platform == 'linux'"]
+wandb = ["wandb"]
+mlflow = ["mlflow"]
+d3 = ["dftd3>=1.7"]
+test = ["pytest", "scipy", "jax>=0.11.2,<0.12", "cuequivariance>=0.12", "cuequivariance-torch>=0.12", "cuequivariance-jax>=0.12", "ipi>=3.3", "mlflow", "wandb", "dftd3>=1.7"]
+
+[tool.setuptools.dynamic]
+version = { attr = "ilmlip.__version__" }
+
+[tool.setuptools.packages.find]
+include = ["ilmlip", "ilmlip.*"]
+
+[tool.setuptools.package-data]
+ilmlip = ["configs/*.json", "csrc/*.cpp"]

@@ -1,0 +1,29 @@
+<!-- 64 water molecules, 32 beads, 300 K: each step one call of the model for all 32 beads -->
+<simulation verbosity="low">
+  <output prefix="pimd">
+    <properties stride="10" filename="out"> [ step, time{picosecond}, conserved{electronvolt}, temperature{kelvin}, kinetic_cv{electronvolt}, potential{electronvolt} ] </properties>
+    <trajectory stride="100" filename="xc" format="xyz"> x_centroid{angstrom} </trajectory>
+  </output>
+  <total_steps> 4000 </total_steps>
+  <prng><seed> 31415 </seed></prng>
+  <ffdirect name="model" pbc="False" threaded="True">
+    <pes> custom </pes>
+    <pes_path> driver.py </pes_path>
+    <parameters> {template: water.xyz, model: OAM-S-omat} </parameters>
+    <batch_size> 32 </batch_size>
+  </ffdirect>
+  <system>
+    <initialize nbeads="32">
+      <file mode="ase"> water.xyz </file>
+      <velocities mode="thermal" units="kelvin"> 300 </velocities>
+    </initialize>
+    <forces><force forcefield="model"> </force></forces>
+    <motion mode="dynamics">
+      <dynamics mode="nvt">
+        <timestep units="femtosecond"> 0.25 </timestep>
+        <thermostat mode="pile_l"><tau units="femtosecond"> 100 </tau></thermostat>
+      </dynamics>
+    </motion>
+    <ensemble><temperature units="kelvin"> 300 </temperature></ensemble>
+  </system>
+</simulation>

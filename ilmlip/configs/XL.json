@@ -1,0 +1,33 @@
+{
+  "hparams": {
+    "rcut": 6.0,
+    "lmax": 3,
+    "lmax_feat": 2,
+    "n_basis": 16,
+    "n_channels": 96,
+    "product_order": 3,
+    "lmax_ind": 2,
+    "n_layers": 2,
+    "n_message": 48,
+    "embed_dim": 64,
+    "lr": 0.0025,
+    "hidden": [
+      1024,
+      1024,
+      1024
+    ],
+    "taper": [
+      96,
+      48,
+      48,
+      12
+    ],
+    "gram_rank": 48,
+    "bispec_rank": 16,
+    "zbl": true,
+    "bound": 16.0,
+    "bond_scale": 0.05,
+    "zbl_switch": 10.0
+  },
+  "source": "bounds (rms gate bound 16, bond_scale 0.05, zbl_switch 10), periodic embedding, path dedup, pair FiLM, shared pair objects, no back-flow, Gram + bispectrum readout, ZBL; XL: lmax 3, lmax_feat 2, lmax_ind 2, tapered channels 96/48/48/12, 16 radial functions, 48 messages, Gram rank 48, bispectrum rank 16, three hidden layers of 1024, 6 A uniform"
+}

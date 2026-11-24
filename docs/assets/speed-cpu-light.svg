@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="340" viewBox="0 0 400 340" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" role="img" aria-label="CPU: atom-steps per second · laptop, 2 cores">
+<text x="46" y="20" font-size="15" font-weight="600" fill="#1f2328">CPU</text>
+<text x="46" y="38" font-size="12" fill="#59636e">atom-steps per second · laptop, 2 cores</text>
+<line x1="46" x2="386" y1="302.0" y2="302.0" stroke="#eaeef2" stroke-width="1"/>
+<text x="40" y="306.0" font-size="11" text-anchor="end" fill="#59636e">0</text>
+<line x1="46" x2="386" y1="252.4" y2="252.4" stroke="#eaeef2" stroke-width="1"/>
+<text x="40" y="256.4" font-size="11" text-anchor="end" fill="#59636e">20k</text>
+<line x1="46" x2="386" y1="202.8" y2="202.8" stroke="#eaeef2" stroke-width="1"/>
+<text x="40" y="206.8" font-size="11" text-anchor="end" fill="#59636e">40k</text>
+<line x1="46" x2="386" y1="153.2" y2="153.2" stroke="#eaeef2" stroke-width="1"/>
+<text x="40" y="157.2" font-size="11" text-anchor="end" fill="#59636e">60k</text>
+<line x1="46" x2="386" y1="103.6" y2="103.6" stroke="#eaeef2" stroke-width="1"/>
+<text x="40" y="107.6" font-size="11" text-anchor="end" fill="#59636e">80k</text>
+<line x1="46" x2="386" y1="54.0" y2="54.0" stroke="#eaeef2" stroke-width="1"/>
+<text x="40" y="58.0" font-size="11" text-anchor="end" fill="#59636e">100k</text>
+<line x1="46" x2="386" y1="302" y2="302" stroke="#d1d9e0" stroke-width="1"/>
+<text x="93.4" y="318" font-size="11" text-anchor="middle" fill="#59636e">100</text>
+<text x="184.9" y="318" font-size="11" text-anchor="middle" fill="#59636e">1k</text>
+<text x="276.3" y="318" font-size="11" text-anchor="middle" fill="#59636e">10k</text>
+<text x="367.7" y="318" font-size="11" text-anchor="middle" fill="#59636e">100k</text>
+<text x="386" y="334" font-size="11" text-anchor="end" fill="#59636e">atoms</text>
+<polyline points="64.3,189.8 93.4,182.9 157.3,174.5 184.9,197.5 248.8,195.7 276.3,193.9 367.7,185.0" fill="none" stroke="#8c959f" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="64.3,98.2 93.4,77.2 157.3,70.1 184.9,76.3 248.8,72.9 276.3,73.5 367.7,70.6" fill="none" stroke="#7b6ef0" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="276.3" y="63.5" font-size="12" text-anchor="middle" fill="#1f2328" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" paint-order="stroke">ILMlip S (C++ engine)</text>
+<text x="276.3" y="213.9" font-size="12" text-anchor="middle" fill="#1f2328" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" paint-order="stroke">NEP89</text>
+<polyline points="64.3,301.4 93.4,301.4 157.3,301.5 184.9,301.7" fill="none" stroke="#8c959f" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="184.9" cy="301.7" r="4" fill="#8c959f" stroke="#ffffff" stroke-width="2"/>
+<text x="192.9" y="292.7" font-size="12" fill="#1f2328" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" paint-order="stroke">MACE-MP-0 small (120)</text>
+</svg>
