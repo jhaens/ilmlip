@@ -6,8 +6,7 @@
 </p>
 
 <p align="center">
-  Fast universal interatomic potentials, pretrained on large datasets<br>
-  and fine-tunable on material specific data.
+  Fast universal interatomic potentials, pretrained on large datasets<br> and fine-tunable on material specific data.
 </p>
 
 <p align="center">
@@ -28,9 +27,7 @@
   </picture>
 </p>
 
-<p align="center"><sub>Molecular dynamics of fcc Cu through ASE. GPU: the lines end where the
-B200's 183 GB run out; DPA-4.1C and DPA-4.1 are the Air-OAM models. CPU: two performance cores of an
-Intel Core Ultra 5 125U.</sub></p>
+<p align="center"><sub>Molecular dynamics of fcc Cu through ASE. GPU: the lines end where the B200's 183 GB run out; DPA-4.1C and DPA-4.1 are the Air-OAM models. CPU: two performance cores of an Intel Core Ultra 5 125U.</sub></p>
 
 ## Features
 
@@ -43,7 +40,7 @@ Intel Core Ultra 5 125U.</sub></p>
 
 ```sh
 pip install ilmlip                # model, training, fine-tuning (PyTorch)
-pip install "jax[cuda12]>=0.11.2,<0.12"  # molecular dynamics on the GPU
+pip install "jax[cuda12]=0.11.2"  # molecular dynamics on the GPU
 ```
 
 ## Molecular dynamics
@@ -74,23 +71,21 @@ More in [examples](https://github.com/jhaens/ilmlip/tree/main/examples).
 
 ## Citation
 
-If you use ILMlip, please cite the code base (paper in preparation)
+If you use ILMlip, please cite the following [preprint](https://arxiv.org/abs/2611.33538)
 
 ```bibtex
 @unpublished{ilmlip,
-      title={{ILMlip}: fast and universal interatomic potentials},
-      author={J. H{\"a}nseroth and C. Dre{\ss}ler},
-      year={2026},
-      url={https://github.com/jhaens/ilmlip},
-      note={in preparation},
+  title={{ILMlip}: fast and universal interatomic potentials},
+  author={J. H{\"a}nseroth and C. Dre{\ss}ler},
+  year={2026},
+  eprint = {2611.33538},
+  archivePrefix = {arXiv},
+  url = {https://arxiv.org/abs/2611.33538}
 }
 ```
 
-and the datasets of the model you use; all references are in
-[references.bib](https://jhaens.github.io/ilmlip/assets/references.bib).
+and the datasets of the model you use; all references are in [references.bib](https://jhaens.github.io/ilmlip/assets/references.bib).
 
 ## License
 
-Code and model files are free for noncommercial use under the
-[PolyForm Noncommercial License 1.0.0](https://github.com/jhaens/ilmlip/blob/main/LICENSE.md). For commercial use, please contact Jonas
-Hänseroth. The training data keep their own licences ([models](https://jhaens.github.io/ilmlip/models.html#licence)).
+Code and model files are free for noncommercial use under the [PolyForm Noncommercial License 1.0.0](https://github.com/jhaens/ilmlip/blob/main/LICENSE.md). For commercial use, please contact Jonas Hänseroth. The training data keep their own licences ([models](https://jhaens.github.io/ilmlip/models.html#licence)).
